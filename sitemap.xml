@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://tengtu.gitee.io/blog/tags/another-test/</loc>
+    <lastmod>2020-02-22T22:15:57+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tengtu.gitee.io/blog/categories/</loc>
+    <lastmod>2020-02-22T22:15:57+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tengtu.gitee.io/blog/categories/category-1/</loc>
+    <lastmod>2020-02-22T22:15:57+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tengtu.gitee.io/blog/categories/category-2/</loc>
+    <lastmod>2020-02-22T22:15:57+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://tengtu.gitee.io/blog/posts/my-first-post/</loc>
     <lastmod>2020-02-22T22:15:57+08:00</lastmod>
   </url>
@@ -13,16 +33,18 @@
   </url>
   
   <url>
-    <loc>https://tengtu.gitee.io/blog/</loc>
+    <loc>https://tengtu.gitee.io/blog/tags/</loc>
     <lastmod>2020-02-22T22:15:57+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tengtu.gitee.io/blog/categories/</loc>
+    <loc>https://tengtu.gitee.io/blog/tags/test/</loc>
+    <lastmod>2020-02-22T22:15:57+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tengtu.gitee.io/blog/tags/</loc>
+    <loc>https://tengtu.gitee.io/blog/</loc>
+    <lastmod>2020-02-22T22:15:57+08:00</lastmod>
   </url>
   
 </urlset>

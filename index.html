@@ -7,8 +7,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>TUTENG</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
-	<meta name="description" content="">
-	
+	<meta name="description" content="TUTENG&#39;s Personal blog about everything">
+	<meta property="og:title" content="TUTENG" />
+<meta property="og:description" content="TUTENG&#39;s Personal blog about everything" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://tengtu.gitee.io/blog/" />
+<meta property="og:updated_time" content="2020-02-22T22:15:57+08:00" />
+
 	
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -37,7 +42,7 @@ if (!doNotTrack) {
 		<div class="logo">
 			<a class="logo__link" href="/blog/" title="TUTENG" rel="home">
 				<div class="logo__title">TUTENG</div>
-				
+				<div class="logo__tagline">Just another site</div>
 			</a>
 		</div>
 		
@@ -80,10 +85,20 @@ if (!doNotTrack) {
 	<header class="list__header">
 		<h3 class="list__title post__title ">
 			<a href="/blog/posts/my-first-post/" rel="bookmark">
-			My First Post
+			Example article title
 			</a>
 		</h3>
-		
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2020-02-22T22:15:57&#43;08:00">2020-02-22</time>
+</div>
+
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/blog/categories/category-1/" rel="category">Category 1</a>, <a class="meta__link" href="/blog/categories/category-2/" rel="category">Category 2</a>
+	</span>
+</div></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
 		Pages
@@ -107,8 +122,28 @@ draft: true
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
-			<li class="widget__item"><a class="widget__link" href="/blog/posts/my-first-post/">My First Post</a></li>
+			<li class="widget__item"><a class="widget__link" href="/blog/posts/my-first-post/">Example article title</a></li>
 		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/blog/categories/category-1/">Category 1</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/blog/categories/category-2/">Category 2</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/blog/tags/another-test/" title="Another test">Another test</a>
+		<a class="widget-taglist__link widget__link btn" href="/blog/tags/test/" title="Test">Test</a>
 	</div>
 </div>
 <div class="widget-social widget">
