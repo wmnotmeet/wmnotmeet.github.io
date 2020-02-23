@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on TUTENG</title>
-    <link>https://tengtu.gitee.io/blog/categories/</link>
+    <link>/categories/</link>
     <description>Recent content in Categories on TUTENG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Sat, 22 Feb 2020 22:15:57 +0800</lastBuildDate>
     
-	<atom:link href="https://tengtu.gitee.io/blog/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Category 1</title>
-      <link>https://tengtu.gitee.io/blog/categories/category-1/</link>
+      <link>/categories/category-1/</link>
       <pubDate>Sat, 22 Feb 2020 22:15:57 +0800</pubDate>
       
-      <guid>https://tengtu.gitee.io/blog/categories/category-1/</guid>
+      <guid>/categories/category-1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Category 2</title>
-      <link>https://tengtu.gitee.io/blog/categories/category-2/</link>
+      <link>/categories/category-2/</link>
       <pubDate>Sat, 22 Feb 2020 22:15:57 +0800</pubDate>
       
-      <guid>https://tengtu.gitee.io/blog/categories/category-2/</guid>
+      <guid>/categories/category-2/</guid>
       <description></description>
     </item>
     
