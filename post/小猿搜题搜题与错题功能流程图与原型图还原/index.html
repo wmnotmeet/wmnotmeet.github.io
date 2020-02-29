@@ -4,15 +4,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>文章发布功能设计 - TUTENG</title>
+	<title>小猿搜题搜题与错题功能流程图与原型图还原 - TUTENG</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
-	<meta name="description" content="文章发布功能设计">
-	<meta property="og:title" content="文章发布功能设计" />
-<meta property="og:description" content="文章发布功能设计" />
+	<meta name="description" content="小猿搜题搜题与错题功能流程图与原型图还原">
+	<meta property="og:title" content="小猿搜题搜题与错题功能流程图与原型图还原" />
+<meta property="og:description" content="小猿搜题搜题与错题功能流程图与原型图还原" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/post/%E6%96%87%E7%AB%A0%E5%8F%91%E5%B8%83%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1/" />
-<meta property="article:published_time" content="2019-11-08T11:30:11+08:00" />
-<meta property="article:modified_time" content="2019-11-08T11:30:11+08:00" />
+<meta property="og:url" content="/post/%E5%B0%8F%E7%8C%BF%E6%90%9C%E9%A2%98%E6%90%9C%E9%A2%98%E4%B8%8E%E9%94%99%E9%A2%98%E5%8A%9F%E8%83%BD%E6%B5%81%E7%A8%8B%E5%9B%BE%E4%B8%8E%E5%8E%9F%E5%9E%8B%E5%9B%BE%E8%BF%98%E5%8E%9F/" />
+<meta property="article:published_time" content="2019-11-23T22:15:57+08:00" />
+<meta property="article:modified_time" content="2019-11-23T22:15:57+08:00" />
 
 	
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -89,11 +89,11 @@ if (!doNotTrack) {
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">文章发布功能设计</h1>
+			<h1 class="post__title">小猿搜题搜题与错题功能流程图与原型图还原</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
 	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
-	<time class="meta__text" datetime="2019-11-08T11:30:11&#43;08:00">2019-11-08</time>
+	<time class="meta__text" datetime="2019-11-23T22:15:57&#43;08:00">2019-11-23</time>
 </div>
 
 <div class="meta__item-categories meta__item">
@@ -103,87 +103,13 @@ if (!doNotTrack) {
 </div></div>
 		</header><div class="content post__content clearfix">
 			<blockquote>
-<p>系统：iOS13；版本：简书v5.15.1，知乎v6.15.0</p>
+<p>系统：iOS13；版本：v9.11.0</p>
 </blockquote>
-<h1 id="0背景">0、背景</h1>
-<p>某新兴问答社区APP设计文章发布的功能。通过调研知乎和简书的文章发布功能，对比分析它们之间的异同点，思考产生设计差异的原因，并总结对后续设计产品有何启发。</p>
-<h1 id="1总结思考">1、总结思考</h1>
-<p>（1）关于视频
-提起文章，都是文本为主，最多加些图片，知乎居然提供了视频功能。站在知乎的角度，平台的内容大多与知识、见解相关，如果把文字的传播比喻成点到点的传播，在文字中加入图片是将点拓展到面，那么视频带来的视听效果就是将面拓展到了体；对于能够沉浸入内容中的用户，视频无疑能够带来更多的信息量、更直观的体验。当然视频的缺点就是需要沉浸，想快速浏览信息的用户并不会点开视频的。</p>
-<p>（2）简书产品的特点
-基于写作平台定位，更适合专注写作，功能上方便用户处理内容结构及归类。
-场景：写专题文章，偏长文。</p>
-<p>（3）知乎产品的特点
-基于问答社区定位，更适合，功能上方便用户精简结构，链接其它用户。
-场景：对某一点发表观点，偏短文。</p>
-<p>（4）我的方案
-因为产品定位问答社区，应遵循在文章内容应该注重简短、直观，方便发布原则，初步功能设定如下：
-i.首屏提供入口、个人中心提供入口，
-ii.支持插入图片，
-iii.文本编辑页面支持直接删除，
-iv.文本编辑工具支持粗体、斜体、标题、引用、超链接、分割线、有序列表和无需列表。</p>
-<p>后续可以考虑加@其他用户、文章分类功能。</p>
-<h1 id="2简书知乎文章发布功能分析详情">2、简书、知乎文章发布功能分析详情</h1>
-<h2 id="21文章发布功能异同">2.1、文章发布功能异同</h2>
-<p><img src="/img/%E6%96%87%E7%AB%A0%E5%8F%91%E5%B8%83%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1/function.png" alt="image.png"></p>
-<h2 id="22功能设计">2.2、功能设计</h2>
-<blockquote>
-<p>通过「功能—用户—场景—需求」的方式，分析知乎和简书的文章发布功能各自设计的原因。</p>
-</blockquote>
-<h3 id="221关于写作入口的场景">2.2.1、关于写作入口的场景</h3>
-<p><img src="/img/%E6%96%87%E7%AB%A0%E5%8F%91%E5%B8%83%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1/write.png" alt="image.png"></p>
-<p>简书：写作是简书核心的功能，满足主屏入口直接进入文本编辑的需求。
-知乎：写文章只是其中一个功能，因此主屏入口进去后不只是「写文章」，还提供提问题、回答问题等入口。</p>
-<h3 id="222关于草稿">2.2.2、关于草稿</h3>
-<p><img src="/img/%E6%96%87%E7%AB%A0%E5%8F%91%E5%B8%83%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1/draft.png" alt="image.png"></p>
-<p>知乎：写文章不是非常正式的功能，草稿满足基本需求。
-对于简书：将草稿功能合并到私密文章功能中，简化功能。</p>
-<h3 id="223关于图片">2.2.3、关于图片</h3>
-<p><img src="/img/%E6%96%87%E7%AB%A0%E5%8F%91%E5%B8%83%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1/image.png" alt="image.png"></p>
-<p>简书和知乎都提供了图片支持，使用图片对文本进行辅助。</p>
-<h3 id="224关于视频">2.2.4、关于视频</h3>
-<p><img src="/img/%E6%96%87%E7%AB%A0%E5%8F%91%E5%B8%83%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1/video.png" alt="image.png"></p>
-<p>知乎：本身就不定位写作平台，使用视频可以包含更多信息量，满足用户快速发文的需求。
-对于简书：简书更专注于写作，使用视觉来获得信息，使用视频并不适合。</p>
-<h3 id="225关于私密文章">2.2.5、关于私密文章</h3>
-<p><img src="/img/%E6%96%87%E7%AB%A0%E5%8F%91%E5%B8%83%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1/article.png" alt="image.png"></p>
-<p>简书：简书是一个写作平台，内容创作者可能会写很多文章，但并不一定会没篇文章都公开，满足内容创作者内容存档的需求；同时私密文章功能还涵盖草稿功能，简化功能，用户更容易使用。
-对于知乎：知乎主打问答社区，强调信息传播与连接，私密文章功能并不重要。</p>
-<h3 id="226关于文集">2.2.6、关于文集</h3>
-<p><img src="/img/%E6%96%87%E7%AB%A0%E5%8F%91%E5%B8%83%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1/corpus.png" alt="image.png"></p>
-<p>简书：内容创作者提会创作大量作品，文集工具符合用户内容归类的需求。
-对于知乎：文章不是主打，需求量自然小。</p>
-<h3 id="227关于删除">2.2.7、关于删除</h3>
-<p><img src="/img/%E6%96%87%E7%AB%A0%E5%8F%91%E5%B8%83%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1/delete.png" alt="image.png"></p>
-<p>简书：包括直接删除文章和删除本次对文章的修改，直接删除文章满足用户快速删除文章的需求，删除本次对文章的修改符合用户回到上一个内容节点的需求。
-对于知乎：本文编辑页面提供量一个取消功能，即删除本次对文章的修改，文章删除放到了草稿列表页面。</p>
-<h3 id="228关于文本编辑工具">2.2.8、关于文本编辑工具</h3>
-<p><img src="/img/%E6%96%87%E7%AB%A0%E5%8F%91%E5%B8%83%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1/text_editor.png" alt="image.png"></p>
-<p>知乎和简书都包括了粗体、斜体、标题、引用、超链接、分割线等基本文本编辑工具。</p>
-<p>知乎：i.单独列出了有序列表和无需列表，满足用户快速定位条目信息结构的需求；ii.提供了@用户功能，满足用户网络社交、快速定位用户的需求。</p>
-<p><figure>
-    <img src="/img/%e6%96%87%e7%ab%a0%e5%8f%91%e5%b8%83%e5%8a%9f%e8%83%bd%e8%ae%be%e8%ae%a1/text_editor_zhihu1.png" width="50%"/> 
-</figure>
- <figure>
-    <img src="/img/%e6%96%87%e7%ab%a0%e5%8f%91%e5%b8%83%e5%8a%9f%e8%83%bd%e8%ae%be%e8%ae%a1/text_editor_zhihu2.png" width="50%"/> 
-</figure>
-</p>
-<p>简书：i.单独列出来四种标题级别工具，方便用户快速定位文本结构；ii.提供了删除线功能，满足用户标记文本的需求。</p>
-<p><figure>
-    <img src="/img/%e6%96%87%e7%ab%a0%e5%8f%91%e5%b8%83%e5%8a%9f%e8%83%bd%e8%ae%be%e8%ae%a1/text_editor_jianshu1.png" width="50%"/> 
-</figure>
- <figure>
-    <img src="/img/%e6%96%87%e7%ab%a0%e5%8f%91%e5%b8%83%e5%8a%9f%e8%83%bd%e8%ae%be%e8%ae%a1/text_editor_jianshu2.png" width="50%"/> 
-</figure>
-</p>
-<h3 id="229关于发布">2.2.9、关于发布</h3>
-<figure>
-    <img src="/img/%e6%96%87%e7%ab%a0%e5%8f%91%e5%b8%83%e5%8a%9f%e8%83%bd%e8%ae%be%e8%ae%a1/push.png"/> 
-</figure>
-
-<p>简书和知乎的共同点是发布后都会跳转到文章详情页。</p>
-<p>知乎：更强调文章目的性，因此必须让用户填写标题。
-对于简书：更强调文章内容，不强制用户填写标题，如果不填写，标题为日期；同时简书虽然支持私密文章，但默认发布是发布公开文章，发布私密文章需要多一步选择的操作，可能是基于平台更推荐用户去发布公开文章或者是用户发布公开文章的频次远高于发布私密文章的频次的考量。</p>
+<h1 id="1页面流程图">1、页面流程图</h1>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/410308/1576993551773-d319a347-2064-4a8b-a5bf-0c0af5cb77a4.png" alt="image.png"></p>
+<h1 id="2原型图">2、原型图</h1>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/410308/1576993573880-ca7bb73a-988b-44e8-8102-cd91defee331.png?x-oss-process=image/resize,w_1500" alt="image.png"></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/410308/1576993593477-70239932-0892-475e-9665-fe9d8105d7dc.png?x-oss-process=image/resize,w_1500" alt="image.png"></p>
 		</div>
 		<footer class="post__footer">
 			
@@ -191,6 +117,8 @@ iv.文本编辑工具支持粗体、斜体、标题、引用、超链接、分�
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
 	<ul class="tags__list">
 		<li class="tags__item"><a class="tags__link btn" href="/tags/%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1/" rel="tag">功能设计</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/tags/%E6%B5%81%E7%A8%8B%E5%9B%BE/" rel="tag">流程图</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/tags/%E5%8E%9F%E5%9E%8B%E5%9B%BE/" rel="tag">原型图</a></li>
 	</ul>
 </div>
 		</footer>
@@ -200,10 +128,10 @@ iv.文本编辑工具支持粗体、斜体、标题、引用、超链接、分�
 
 <nav class="post-nav flex">
 	<div class="post-nav__item post-nav__item--prev">
-		<a class="post-nav__link" href="/post/%E8%BE%BE%E7%9B%AE%E6%A0%87app%E7%99%BB%E5%BD%95%E6%B3%A8%E5%86%8C%E6%B5%81%E7%A8%8B%E5%9B%BE%E8%BF%98%E5%8E%9F/" rel="prev"><span class="post-nav__caption">«&thinsp;上一篇</span><p class="post-nav__post-title">达目标APP登录注册流程图还原</p></a>
+		<a class="post-nav__link" href="/post/%E6%BC%AB%E6%B8%B8%E9%B2%B8%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%A2%9E%E5%8A%A0%E4%B9%A6%E8%AF%84%E5%8A%9F%E8%83%BD%E9%9C%80%E6%B1%82%E6%96%87%E6%A1%A3/" rel="prev"><span class="post-nav__caption">«&thinsp;上一篇</span><p class="post-nav__post-title">漫游鲸小程序增加书评功能需求文档</p></a>
 	</div>
 	<div class="post-nav__item post-nav__item--next">
-		<a class="post-nav__link" href="/post/%E6%BC%AB%E6%B8%B8%E9%B2%B8%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%A2%9E%E5%8A%A0%E4%B9%A6%E8%AF%84%E5%8A%9F%E8%83%BD%E9%9C%80%E6%B1%82%E6%96%87%E6%A1%A3/" rel="next"><span class="post-nav__caption">下一篇&thinsp;»</span><p class="post-nav__post-title">漫游鲸小程序增加书评功能需求文档</p></a>
+		<a class="post-nav__link" href="/post/%E4%BD%A0%E4%BB%8A%E5%A4%A9%E7%9C%9F%E5%A5%BD%E7%9C%8Bapp%E4%BA%A7%E5%93%81%E8%B0%83%E7%A0%94/" rel="next"><span class="post-nav__caption">下一篇&thinsp;»</span><p class="post-nav__post-title">你今天真好看APP产品调研</p></a>
 	</div>
 </nav>
 

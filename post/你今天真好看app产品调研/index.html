@@ -4,15 +4,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>文章发布功能设计 - TUTENG</title>
+	<title>你今天真好看APP产品调研 - TUTENG</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
-	<meta name="description" content="文章发布功能设计">
-	<meta property="og:title" content="文章发布功能设计" />
-<meta property="og:description" content="文章发布功能设计" />
+	<meta name="description" content="你今天真好看APP产品调研">
+	<meta property="og:title" content="你今天真好看APP产品调研" />
+<meta property="og:description" content="你今天真好看APP产品调研" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/post/%E6%96%87%E7%AB%A0%E5%8F%91%E5%B8%83%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1/" />
-<meta property="article:published_time" content="2019-11-08T11:30:11+08:00" />
-<meta property="article:modified_time" content="2019-11-08T11:30:11+08:00" />
+<meta property="og:url" content="/post/%E4%BD%A0%E4%BB%8A%E5%A4%A9%E7%9C%9F%E5%A5%BD%E7%9C%8Bapp%E4%BA%A7%E5%93%81%E8%B0%83%E7%A0%94/" />
+<meta property="article:published_time" content="2019-12-02T23:55:09+08:00" />
+<meta property="article:modified_time" content="2019-12-02T23:55:09+08:00" />
 
 	
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -89,11 +89,11 @@ if (!doNotTrack) {
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">文章发布功能设计</h1>
+			<h1 class="post__title">你今天真好看APP产品调研</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
 	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
-	<time class="meta__text" datetime="2019-11-08T11:30:11&#43;08:00">2019-11-08</time>
+	<time class="meta__text" datetime="2019-12-02T23:55:09&#43;08:00">2019-12-02</time>
 </div>
 
 <div class="meta__item-categories meta__item">
@@ -103,94 +103,102 @@ if (!doNotTrack) {
 </div></div>
 		</header><div class="content post__content clearfix">
 			<blockquote>
-<p>系统：iOS13；版本：简书v5.15.1，知乎v6.15.0</p>
+<p>系统：iOS13；版本：v1.9.10</p>
 </blockquote>
 <h1 id="0背景">0、背景</h1>
-<p>某新兴问答社区APP设计文章发布的功能。通过调研知乎和简书的文章发布功能，对比分析它们之间的异同点，思考产生设计差异的原因，并总结对后续设计产品有何启发。</p>
-<h1 id="1总结思考">1、总结思考</h1>
-<p>（1）关于视频
-提起文章，都是文本为主，最多加些图片，知乎居然提供了视频功能。站在知乎的角度，平台的内容大多与知识、见解相关，如果把文字的传播比喻成点到点的传播，在文字中加入图片是将点拓展到面，那么视频带来的视听效果就是将面拓展到了体；对于能够沉浸入内容中的用户，视频无疑能够带来更多的信息量、更直观的体验。当然视频的缺点就是需要沉浸，想快速浏览信息的用户并不会点开视频的。</p>
-<p>（2）简书产品的特点
-基于写作平台定位，更适合专注写作，功能上方便用户处理内容结构及归类。
-场景：写专题文章，偏长文。</p>
-<p>（3）知乎产品的特点
-基于问答社区定位，更适合，功能上方便用户精简结构，链接其它用户。
-场景：对某一点发表观点，偏短文。</p>
-<p>（4）我的方案
-因为产品定位问答社区，应遵循在文章内容应该注重简短、直观，方便发布原则，初步功能设定如下：
-i.首屏提供入口、个人中心提供入口，
-ii.支持插入图片，
-iii.文本编辑页面支持直接删除，
-iv.文本编辑工具支持粗体、斜体、标题、引用、超链接、分割线、有序列表和无需列表。</p>
-<p>后续可以考虑加@其他用户、文章分类功能。</p>
-<h1 id="2简书知乎文章发布功能分析详情">2、简书、知乎文章发布功能分析详情</h1>
-<h2 id="21文章发布功能异同">2.1、文章发布功能异同</h2>
-<p><img src="/img/%E6%96%87%E7%AB%A0%E5%8F%91%E5%B8%83%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1/function.png" alt="image.png"></p>
-<h2 id="22功能设计">2.2、功能设计</h2>
-<blockquote>
-<p>通过「功能—用户—场景—需求」的方式，分析知乎和简书的文章发布功能各自设计的原因。</p>
-</blockquote>
-<h3 id="221关于写作入口的场景">2.2.1、关于写作入口的场景</h3>
-<p><img src="/img/%E6%96%87%E7%AB%A0%E5%8F%91%E5%B8%83%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1/write.png" alt="image.png"></p>
-<p>简书：写作是简书核心的功能，满足主屏入口直接进入文本编辑的需求。
-知乎：写文章只是其中一个功能，因此主屏入口进去后不只是「写文章」，还提供提问题、回答问题等入口。</p>
-<h3 id="222关于草稿">2.2.2、关于草稿</h3>
-<p><img src="/img/%E6%96%87%E7%AB%A0%E5%8F%91%E5%B8%83%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1/draft.png" alt="image.png"></p>
-<p>知乎：写文章不是非常正式的功能，草稿满足基本需求。
-对于简书：将草稿功能合并到私密文章功能中，简化功能。</p>
-<h3 id="223关于图片">2.2.3、关于图片</h3>
-<p><img src="/img/%E6%96%87%E7%AB%A0%E5%8F%91%E5%B8%83%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1/image.png" alt="image.png"></p>
-<p>简书和知乎都提供了图片支持，使用图片对文本进行辅助。</p>
-<h3 id="224关于视频">2.2.4、关于视频</h3>
-<p><img src="/img/%E6%96%87%E7%AB%A0%E5%8F%91%E5%B8%83%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1/video.png" alt="image.png"></p>
-<p>知乎：本身就不定位写作平台，使用视频可以包含更多信息量，满足用户快速发文的需求。
-对于简书：简书更专注于写作，使用视觉来获得信息，使用视频并不适合。</p>
-<h3 id="225关于私密文章">2.2.5、关于私密文章</h3>
-<p><img src="/img/%E6%96%87%E7%AB%A0%E5%8F%91%E5%B8%83%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1/article.png" alt="image.png"></p>
-<p>简书：简书是一个写作平台，内容创作者可能会写很多文章，但并不一定会没篇文章都公开，满足内容创作者内容存档的需求；同时私密文章功能还涵盖草稿功能，简化功能，用户更容易使用。
-对于知乎：知乎主打问答社区，强调信息传播与连接，私密文章功能并不重要。</p>
-<h3 id="226关于文集">2.2.6、关于文集</h3>
-<p><img src="/img/%E6%96%87%E7%AB%A0%E5%8F%91%E5%B8%83%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1/corpus.png" alt="image.png"></p>
-<p>简书：内容创作者提会创作大量作品，文集工具符合用户内容归类的需求。
-对于知乎：文章不是主打，需求量自然小。</p>
-<h3 id="227关于删除">2.2.7、关于删除</h3>
-<p><img src="/img/%E6%96%87%E7%AB%A0%E5%8F%91%E5%B8%83%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1/delete.png" alt="image.png"></p>
-<p>简书：包括直接删除文章和删除本次对文章的修改，直接删除文章满足用户快速删除文章的需求，删除本次对文章的修改符合用户回到上一个内容节点的需求。
-对于知乎：本文编辑页面提供量一个取消功能，即删除本次对文章的修改，文章删除放到了草稿列表页面。</p>
-<h3 id="228关于文本编辑工具">2.2.8、关于文本编辑工具</h3>
-<p><img src="/img/%E6%96%87%E7%AB%A0%E5%8F%91%E5%B8%83%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1/text_editor.png" alt="image.png"></p>
-<p>知乎和简书都包括了粗体、斜体、标题、引用、超链接、分割线等基本文本编辑工具。</p>
-<p>知乎：i.单独列出了有序列表和无需列表，满足用户快速定位条目信息结构的需求；ii.提供了@用户功能，满足用户网络社交、快速定位用户的需求。</p>
-<p><figure>
-    <img src="/img/%e6%96%87%e7%ab%a0%e5%8f%91%e5%b8%83%e5%8a%9f%e8%83%bd%e8%ae%be%e8%ae%a1/text_editor_zhihu1.png" width="50%"/> 
-</figure>
- <figure>
-    <img src="/img/%e6%96%87%e7%ab%a0%e5%8f%91%e5%b8%83%e5%8a%9f%e8%83%bd%e8%ae%be%e8%ae%a1/text_editor_zhihu2.png" width="50%"/> 
-</figure>
-</p>
-<p>简书：i.单独列出来四种标题级别工具，方便用户快速定位文本结构；ii.提供了删除线功能，满足用户标记文本的需求。</p>
-<p><figure>
-    <img src="/img/%e6%96%87%e7%ab%a0%e5%8f%91%e5%b8%83%e5%8a%9f%e8%83%bd%e8%ae%be%e8%ae%a1/text_editor_jianshu1.png" width="50%"/> 
-</figure>
- <figure>
-    <img src="/img/%e6%96%87%e7%ab%a0%e5%8f%91%e5%b8%83%e5%8a%9f%e8%83%bd%e8%ae%be%e8%ae%a1/text_editor_jianshu2.png" width="50%"/> 
-</figure>
-</p>
-<h3 id="229关于发布">2.2.9、关于发布</h3>
+<p>近年来，随着人民生活水平的提高，护肤美妆这件事也越来越被大家热衷。围绕护肤领域，这几年也有很多相关APP冒出来；同时人工智能技术的普及与广泛应用，市场上的护肤服务变得多样化与专业化。其中「你今天真好看」APP成功的将人工智能技术运用到自家的护肤服务中，具有很好的借鉴意义。</p>
+<h1 id="1目的">1、目的</h1>
+<p>调研「你今天真好看」APP，并以此分析目前护肤相关产品的发展与目前的功能现状，学习并积累经验。</p>
+<h1 id="2调研结论">2、调研结论</h1>
+<ol>
+<li>一开始只推出一个解决用户需求最基本的最小可行性产品，再一步一步通过用户和产品的互动来优化产品；</li>
+<li>小步快速迭代，测试用户需求，不断优化，打造口碑；</li>
+<li>打造话题社区，引入社交属性，提高用户粘性，形成产品的护城河；</li>
+</ol>
+<h1 id="3调研详情">3、调研详情</h1>
+<h2 id="31产品介绍">3.1、产品介绍</h2>
+<h3 id="311产品简介">3.1.1、产品简介</h3>
+<p>「你今天真好看」是一款基于人工智能技术的护肤app，主打&quot;拍照轻松测肤质”，	通过手机摄像头拍照和算法分析，分析用户的肌肤年龄、黑头、痘痘、毛孔、出油部位、光滑度、肤色等肤质问题，并给出相应的护肤建议以及匹配的护肤品。</p>
+<h3 id="312核心功能">3.1.2、核心功能</h3>
+<p>拍照测肤：通过手机拍照对皮肤进行肤质检测；</p>
+<p>智能分析：从肌龄、肤色、出油、痘痘、黑头、毛孔、光滑度等多个角度，全面分析肤质；</p>
+<p>产品推荐：结合肤质和科学的护肤理论，定制个性化的化妆品护肤品方案；</p>
+<p>护肤科普：一众护肤大V坐镇，陪你聊成分、谈功效、扒内幕、挑好货，从此理性剁手</p>
+<p>同肤质社区：同肤质的人在一个社区内交流；</p>
+<p>肤质记录：记录皮肤的每一点改变。</p>
+<h2 id="32用户场景需求分析">3.2、用户场景需求分析</h2>
+<table>
+<thead>
+<tr>
+<th>用户</th>
+<th>使用场景</th>
+<th>满足的需求</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>目的型用户</td>
+<td>检测皮肤状态，有针对性的进行护肤</td>
+<td>改善或保持皮肤状态</td>
+</tr>
+<tr>
+<td>潜在用户</td>
+<td>了解护肤知识</td>
+<td>日常消遣，储备知识</td>
+</tr>
+<tr>
+<td>内容创作者</td>
+<td>将自己的专业护肤知识分享给大家</td>
+<td>个人品牌提升，推广产品</td>
+</tr>
+</tbody>
+</table>
+<h2 id="33产品逻辑与结构">3.3、产品逻辑与结构</h2>
+<h3 id="331核心业务逻辑">3.3.1、核心业务逻辑</h3>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/410308/1576993977993-a9a44ede-50d2-4304-8149-190b45203f3e.png" alt="img"></p>
+<p>「今天你真好看」业务中用户主要有：用户、内容生产者和运营团队。</p>
+<ul>
+<li>用户：测肤、根据APP中护肤方案的商品链接进行消费；</li>
+<li>内容生产者：生产内容，提升个人品牌，获得收益分成；</li>
+<li>运营团队：进行内容、社区运营，引导用户通过商品链接购买商品。</li>
+</ul>
+<h3 id="332关键路径">3.3.2、关键路径</h3>
 <figure>
-    <img src="/img/%e6%96%87%e7%ab%a0%e5%8f%91%e5%b8%83%e5%8a%9f%e8%83%bd%e8%ae%be%e8%ae%a1/push.png"/> 
+    <img src="https://cdn.nlark.com/yuque/0/2019/png/410308/1576993977919-a893a1cd-0b21-4cae-bce9-1ee1505294cd.png" width="50%"/> 
 </figure>
 
-<p>简书和知乎的共同点是发布后都会跳转到文章详情页。</p>
-<p>知乎：更强调文章目的性，因此必须让用户填写标题。
-对于简书：更强调文章内容，不强制用户填写标题，如果不填写，标题为日期；同时简书虽然支持私密文章，但默认发布是发布公开文章，发布私密文章需要多一步选择的操作，可能是基于平台更推荐用户去发布公开文章或者是用户发布公开文章的频次远高于发布私密文章的频次的考量。</p>
+<h3 id="333产品功能结构">3.3.3、产品功能结构</h3>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/410308/1576993977944-3d73f41f-1fb7-46a7-a452-99f49629a221.png?x-oss-process=image/resize,w_1500" alt="img"></p>
+<h2 id="34关键页面与典型交互">3.4、关键页面与典型交互</h2>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/410308/1576993977967-3bd6138d-5e1e-4900-8bd8-d22e21d11d75.png?x-oss-process=image/resize,w_1500" alt="img"></p>
+<h2 id="35产品迭代路线">3.5、产品迭代路线</h2>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/410308/1576993977930-6a828f28-f004-430d-8f0c-1c33ee14e77c.png" alt="img"></p>
+<ol>
+<li>2016年09月17日前的v1.0版本有3个子版本，上线最小可行性产品并保证稳定性；</li>
+<li>2016年10月04日-2017年06月21日包含了v1.1-v1.3版本的更新，共有19个子版本，用于测试用户需求；</li>
+<li>2017年07月07日-2017年10月03日的v1.4版本共有8个子版本，增加了产品库和商家链接，开始将盈利因素加入到产品中；</li>
+<li>2017年10月27日-2019年01月31日的v1.5-v1.8版本围绕护肤产品进行内容运营，同时不断调整和面向用户测试不同的功能；</li>
+<li>2019年03月24日-2019年10月01日的v1.9版本加入品牌库和医美定制，增强用户粘性，加强用户站内商品链接跳转引导。</li>
+</ol>
+<h2 id="36产品数据表现">3.6、产品数据表现</h2>
+<h3 id="361app-store-下载量">3.6.1、App Store 下载量</h3>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/410308/1576993977927-69b6d86a-0d37-4188-bd5d-e583e5e97163.png" alt="img"></p>
+<p>2017年01月20日v1.2版本发布后，下载量出现一个高峰，此后2018年01月和02月也出现了下载高峰，后期下载量趋于稳定，产品进入成熟期。</p>
+<h3 id="362产品自身数据">3.6.2、产品自身数据</h3>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/410308/1576993977915-0fcaf8be-e184-45fe-99e5-f931417734d1.png?x-oss-process=image/resize,w_1500" alt="img"></p>
+<p>从文章相关的数据来看，文章的浏览量都比较高，有助于产品的拉新和商品的推广。</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/410308/1576993977892-f9f8a9d8-f890-4a29-b82b-8915af527e41.png?x-oss-process=image/resize,w_1500" alt="img"></p>
+<p>从话题相关的数据来看，用户的活跃度非常高，有促活、留存的效果，同时提升用户粘性。</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/410308/1576993977881-0f55d185-bfde-440b-ba36-ec4c4e0361c3.png?x-oss-process=image/resize,w_1500" alt="img"></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/410308/1576993977969-32607829-a067-486b-983e-f13093fa9f79.png?x-oss-process=image/resize,w_1500" alt="img"></p>
+<p>从与商品和品牌相关的数据来看，用户对商品的关注度、认可度都比较好，说明营收的条件是有的，需要考虑的是转化问题。</p>
 		</div>
 		<footer class="post__footer">
 			
 <div class="post__tags tags clearfix">
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
 	<ul class="tags__list">
-		<li class="tags__item"><a class="tags__link btn" href="/tags/%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1/" rel="tag">功能设计</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/tags/%E4%BA%A7%E5%93%81%E8%B0%83%E7%A0%94/" rel="tag">产品调研</a></li>
 	</ul>
 </div>
 		</footer>
@@ -200,10 +208,7 @@ iv.文本编辑工具支持粗体、斜体、标题、引用、超链接、分�
 
 <nav class="post-nav flex">
 	<div class="post-nav__item post-nav__item--prev">
-		<a class="post-nav__link" href="/post/%E8%BE%BE%E7%9B%AE%E6%A0%87app%E7%99%BB%E5%BD%95%E6%B3%A8%E5%86%8C%E6%B5%81%E7%A8%8B%E5%9B%BE%E8%BF%98%E5%8E%9F/" rel="prev"><span class="post-nav__caption">«&thinsp;上一篇</span><p class="post-nav__post-title">达目标APP登录注册流程图还原</p></a>
-	</div>
-	<div class="post-nav__item post-nav__item--next">
-		<a class="post-nav__link" href="/post/%E6%BC%AB%E6%B8%B8%E9%B2%B8%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%A2%9E%E5%8A%A0%E4%B9%A6%E8%AF%84%E5%8A%9F%E8%83%BD%E9%9C%80%E6%B1%82%E6%96%87%E6%A1%A3/" rel="next"><span class="post-nav__caption">下一篇&thinsp;»</span><p class="post-nav__post-title">漫游鲸小程序增加书评功能需求文档</p></a>
+		<a class="post-nav__link" href="/post/%E5%B0%8F%E7%8C%BF%E6%90%9C%E9%A2%98%E6%90%9C%E9%A2%98%E4%B8%8E%E9%94%99%E9%A2%98%E5%8A%9F%E8%83%BD%E6%B5%81%E7%A8%8B%E5%9B%BE%E4%B8%8E%E5%8E%9F%E5%9E%8B%E5%9B%BE%E8%BF%98%E5%8E%9F/" rel="prev"><span class="post-nav__caption">«&thinsp;上一篇</span><p class="post-nav__post-title">小猿搜题搜题与错题功能流程图与原型图还原</p></a>
 	</div>
 </nav>
 
